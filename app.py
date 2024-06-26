@@ -23,10 +23,12 @@ st.header("Your Research Companion 🕵🏻")
 urls = []
 with st.sidebar:
     url_count = st.number_input("Number of URLs", 1, 10, 1)
+    st.caption("Make sure to hit enter after entering the URL")
     for i in range(url_count):
         urls.append(st.text_input(f"URL {i+1}"))
         
 process_button = st.sidebar.button("Process")
+st.sidebar.caption("Please make sure to turn on JavaScript and cookies in your browser settings to use this app.")
 
 # llm = ChatGoogleGenerativeAI(model='aqa', temperature=0.7)
 llm = GoogleGenerativeAI(model="gemini-pro", temperature= temp)
@@ -36,7 +38,7 @@ if process_button:
     create_vectordb(urls, embeddings)
     
 query = st.text_area("Enter your question here")
-st.caption("Please provide a question based on the provided context. After entering your question, hit enter and then click on Find Answer button.")
+st.caption("Please provide a question based on the provided context. After entering your question, hit ctrl+enter and then click on Find Answer button.")
 
 if query:
     find_answer = st.button("Find Answer")
