@@ -11,6 +11,9 @@ This LLM project is to help researchers to find exact information from the resea
 - **Gemini-Embeddings🧬** - Model to encapsulate information into dense representations in a multi-dimensional space 
 - **Python🐍** - Programming language used to develop the system.
 
+## Architecture
+![Architecture](/screenshots/architecture.png "Architecture")
+
 ## Getting Started
 #### 1. Clone the repository
 Clone the repository to your local machine using the following command.
