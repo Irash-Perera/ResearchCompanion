@@ -14,6 +14,12 @@ This LLM project is to help researchers to find exact information from the resea
 ## Architecture
 ![Architecture](/screenshots/architecture.png "Architecture")
 
+
+
+https://github.com/Irash-Perera/ResearchCompanion/assets/42272743/65fd423b-480e-44e3-a075-03386e4e3b2c
+
+
+
 ## Getting Started
 #### 1. Clone the repository
 Clone the repository to your local machine using the following command.
