@@ -1,8 +1,5 @@
 import os 
 import streamlit as st
-import time
-import json 
-import requests 
 
 from create_vectordb import create_vectordb
 from generate_output import generate_output 
