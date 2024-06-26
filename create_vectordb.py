@@ -9,15 +9,15 @@ def create_vectordb(urls, embeddings):
         #load data
         status.update(label="Loading data...",state="running", expanded=False)
         loader = WebBaseLoader(urls)
-        data = loader.load()
+        docs = loader.load()
         
-        # print(data)
-        #split data
-        status.update(label="Crunching data into chunks...",state="running", expanded=False)
-        r_splitter = RecursiveCharacterTextSplitter(
-            separators= [ ".", "," ],
-            chunk_size= 2000)
-        docs = r_splitter.split_documents(data)
+        # # print(data)
+        # #split data
+        # status.update(label="Crunching data into chunks...",state="running", expanded=False)
+        # r_splitter = RecursiveCharacterTextSplitter(
+        #     separators= [ ".", "," ],
+        #     chunk_size= 2000)
+        # docs = r_splitter.split_documents(data)
         # print(docs)
 
         #create embeddings
